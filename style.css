@@ -1,0 +1,93 @@
+body {
+    background-color: gainsboro;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    height: 100%;
+}
+
+nav {
+    background-color: green;
+}
+
+.navbar {
+    padding: 0px 10px;
+    height: 80px;
+    background-color: green;
+    display: flex;
+    justify-content: space-between;
+    color: green;
+    background-color: white;
+}
+
+.white {
+    background-color: green;
+    color: white;
+}
+
+.navbar .left,
+.right {
+    display: flex;
+}
+
+.navbar .left {
+    align-items: center;
+
+}
+
+.navbar .left>h3 {}
+
+.navbar .right {
+    align-items: center;
+    column-gap: 45px;
+}
+
+.navbar .right>img {
+    width: 30px;
+    height: 30px;
+    display: none;
+}
+
+nav .dropdown {
+    flex-flow: column;
+    align-items: center;
+    row-gap: 30px;
+    padding: 20px 0px;
+    display: none;
+    color: white;
+    background-color: green;
+}
+
+@media  screen and (max-width:480px) {
+    .navbar .right>span {
+        display: none;
+    }
+    nav .drop{
+        display: none;
+    }
+
+    .navbar {
+        color: white;
+        background-color: green;
+    }
+
+    .navbar .right>img {
+        display: inline;
+    }
+
+    nav .dropdown {
+        display: flex;
+    }
+
+    .white {
+        background-color: white;
+        color: green;
+    }
+
+}
